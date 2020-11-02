@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Watch Landing Page Design</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300&family=Itim&display=swap" rel="stylesheet"> -->
+    <link rel="icon" href="img/watch.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo">Watch</a>
+            <div class="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <div class="contentbox">
+                <h2>Future <span style="color: #111;">On<br>Your</span> Hand</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis vulputate pulvinar lobortis. Aliquam in venenatis eros. 
+                    Cras id tincidunt mi. Sed sed urna risus. Aliquam a nisi mauris. 
+                    Aliquam convallis augue eget nulla maximus, sit amet consectetur ex sollicitudin. 
+                    Proin ac risus sed odio ornare convallis. </p>
+                <a href="#">Buy Now</a>
+            </div>
+            <div class="imgbox">               
+                <img src="img/watch.png" alt="watch" srcset="">
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#" title="Facebook"><img src="img/facebook.png" alt="facebook" srcset=""></a></li>
+            <li><a href="#" title="Twiter"><img src="img/twitter.png" alt="twitter" srcset=""></a></li>
+            <li><a href="#" title="Instagram"><img src="img/instagram.png" alt="instagram" srcset=""></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </section>
+    <script>
+        function toggle(){
+            const toggle = document.querySelector('.toggle');
+            toggle.classList.toggle('active');
+
+            const banner = document.querySelector('.banner');
+            banner.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
